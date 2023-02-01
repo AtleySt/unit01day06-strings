@@ -1,5 +1,3 @@
-// great, except again:
-// TODO: you have to actually make a new String
 public class Abbreviate {
     public static void main(String[] args) {
         String a = args[0];
@@ -7,9 +5,11 @@ public class Abbreviate {
         String lastTwo = a.substring(a.length()-2, a.length());
 
         if (a.length()<8) {
-            System.out.println(a);
+            String result = a;
+            System.out.println(result);
         } else {
-            System.out.println(firstTwo+"..."+lastTwo);
+            String result = firstTwo+"..."+lastTwo;
+            System.out.println(result);
         }
     }
 }
